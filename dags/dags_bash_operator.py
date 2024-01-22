@@ -18,3 +18,5 @@ with DAG(
         task_id="bash_t2",# bash 명과 task_id는 일치하도록!
         bash_command="echo $HOSTNAME",
     )
+
+    bash_t1 >> bash_t2
